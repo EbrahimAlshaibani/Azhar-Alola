@@ -26,10 +26,16 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-</head>
 
+   <!-- responsive style -->
+   <link href="css/css.css" rel="stylesheet" />
+</head>
+<div class="loader">
+  <div></div>
+</div>
+<div class="content">
 <body>
   <div class="top_container">
     <!-- header section strats -->
@@ -52,6 +58,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="login.php"> دخول </a>
+                </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="index.html"> الرئيسية <span class="sr-only">(current)</span></a>
                 </li>
@@ -326,14 +335,8 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
-
-
-  <!-- end contact section -->
-
-  <!-- admission section -->
   <section class="admission_section ">
     <div class="container-fluid position-relative">
       <div class="row h-100">
@@ -358,22 +361,12 @@
                  تعرف اكثر
                 </a>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-
-
-
-  <!-- admission section -->
-
-
-
-
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
@@ -382,36 +375,15 @@
     </p>
   </section>
   <!-- footer section -->
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
-  <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-      });
-
-      var image = 'images/maps-and-flags.png';
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-        map: map,
-        icon: image
-      });
-    }
-  </script>
-  <!-- google map js -->
-\
-  <!-- end google map js -->
+         <script>
+          $(window).on('load',function()
+          {
+            $(".loader").fadeOut(100);
+            $(".content").fadeIn(100);
+          })
+        </script>
 </body>
-
+</div>
 </html>
