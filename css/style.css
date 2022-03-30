@@ -456,3 +456,38 @@ a:focus {
 }
 
 /* end footer section*/
+
+.content
+{
+    display: none;
+}
+.loader {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #ffffff00;
+  position: absolute;
+}
+.loader>div
+{ 
+  height: 100px;
+  width: 100px;
+  border: 5px solid #ccdbe3;
+  border-top-color: #fec913;
+  border-right-color: #082465;
+  border-left-color: #082465;
+  border-bottom-color: #fec913;
+  animation: spin 1.0s infinite linear;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+ right: 0;
+}
+
+@keyframes spin {
+
+  100% { transform: rotate(360deg); }
+}
