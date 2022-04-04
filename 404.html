@@ -1,0 +1,148 @@
+<html>
+<title>404</title>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/Logo/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="Fonts/icomoon/style.css" rel="stylesheet" />
+</head>
+<div id="loading-icon-bx"></div>
+
+<body>
+    <div class="top_container sub_pages">
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <span>مدرسة أزهار العُلا</span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html"> دخول </a>
+                                    </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">تواصل معنا</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> عن المدرسة </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="football.html"> الملعب </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="teacher.html"> الكادر التعليمي </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> الرئيسية <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="btn  my-2 my-sm-0 nav_search-btn  icon-search" type="submit"></button>
+                            </form>
+                        </div>
+                </nav>
+            </div>
+        </header>
+<body>
+
+    <style>
+        * {
+            font-family: "Main" sans-serif;
+        }
+
+        .contauer {
+            text-align: right;
+            width: 80%;
+            margin-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 1px #082465;
+            border-radius: 5px;
+            margin-bottom: 150px;
+        }
+
+        .contauer h1 {
+            color: #082465;
+            padding: 20px ;
+            font-weight: 200;
+            font-size: 20px;
+        }
+
+        .contauer h3 {
+            color: #CBA00F;
+            padding: 20px;
+            font-weight: 200;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <body>
+        <div style="padding-top: 1px;">
+            <div class="contauer">
+                <h1>للاسف 404 ,الصفحة المطلوبة غير موجودة</h1>
+                <a href="../index.php">
+                    <h3>اضغط,للعودة للصفحة الرئيسية</h3>
+                </a>
+            </div>
+        </div>
+    </body>
+    <button id="scrollToTopBtn" class="icon-arrow-up"></button>
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2022 All Rights Reserved By Azhar Al-Ola<br>
+            Website Developed by<a href="https://ebrahimalshaibani.github.io/ebrahim/#"> Ebrahim Alshaibani</a>
+        </p>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/functions.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(window).on('load', function () {
+                $(".loader").fadeOut(100);
+                $(".content").fadeIn(100);
+            })
+        </script>
+        <script>
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+            var rootElement = document.documentElement
+            function scrollToTop() {
+                rootElement.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            }
+            scrollToTopBtn.addEventListener("click", scrollToTop)
+            var mybutton = document.getElementById("scrollToTopBtn");
+            window.onscroll = function () { scrollFunction() };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </section>
+
+</body>
+
+</html>

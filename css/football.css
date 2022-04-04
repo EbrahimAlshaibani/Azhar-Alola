@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "Main";
+    src: url("../Fonts/DroidKufi-Regular.ttf");
+  }
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: rgba( 71, 147, 227, 1);
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+.football-sec
+{
+  margin: 10px;
+  text-align: center;
+}
+.football-image
+{
+  background-image: url(../images/football.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 720px) {
+  .football-image
+{
+  height: 200px;
+  width: 100%;
+}
+}
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 15px;
+    font-family: "Main",sans-serif ;
+}
+
+.fl-table thead th {
+    color: #fff;
+    background: #446c26;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #326032;
+    border: #ffffff solid 1px;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+   
+    .table-wrapper{
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .football-sec ,.football-sec h1 ,.football-sec p 
+    {
+margin-top: 30px;
+margin-bottom: 30px;
+    }
+}
+
+.book-btn
+{
+    padding: 10px;
+    background-color: #326032;
+    border: 2px solid #446c26;
+    color: #fff;
+    font-weight: 500;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 15px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.book-btn:hover
+{
+    transform: translateY(-5px);
+}
+
+.my-table
+{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-table-de
+{
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}.fmy-table-de td, .my-table-de th {
+    text-align: center;
+    padding: 8px;
+}
+
+.my-table-de td {
+    border-right: 1px solid #f8f8f8;
+    text-align: center;
+    font-size: 13px;
+}
+
+.my-table-de thead th {
+    color: #fff;
+    background: #446c26;
+}
+
+
+.my-table-de thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #326032;
+    border: #ffffff solid 1px;
+}
+
+.my-table-de tr:nth-child(even) {
+    background: #F8F8F8;
+
+}
+@media (max-width: 767px) {
+   
+    .my-table{
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
