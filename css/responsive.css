@@ -57,10 +57,7 @@
         width: 100%;
     }
 
-    .top_container::before {
-        width: 200%;
 
-    }
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
 
